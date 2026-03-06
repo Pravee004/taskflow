@@ -1,8 +1,8 @@
 import { useState, useEffect, useContext, createContext, useCallback } from "react";
 
 // ─── API CONFIG ─────────────────────────────────────────────────────────────
-// const API_BASE = "http://localhost:8000/api/v1";
-const API_BASE = "https://YOUR-RAILWAY-URL.railway.app/api/v1";
+const API_BASE = "http://localhost:8000/api/v1";
+// const API_BASE = "https://YOUR-RAILWAY-URL.railway.app/api/v1";
 
 async function apiFetch(path, options = {}) {
   const token = localStorage.getItem("access_token");
