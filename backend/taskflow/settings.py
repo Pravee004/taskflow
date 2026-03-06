@@ -82,3 +82,11 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import os
+CORS_ALLOWED_ORIGINS = [
+    "https://taskflow-git-main-praveen-gs-projects-7c636adf.vercel.app",
+    "https://taskflow-sage-nine.vercel.app",
+    "http://localhost:3000",
+]
+CORS_ALLOW_ALL_ORIGINS = True
